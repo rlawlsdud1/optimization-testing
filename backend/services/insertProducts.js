@@ -12,7 +12,7 @@ const imageFilePath = path.join(
 const base64Image = convertImageToBase64(imageFilePath);
 
 // 초기 데이터 생성
-const initialProducts = Array.from({ length: 30 }, (_, index) => ({
+const initialProducts = Array.from({ length: 90 }, (_, index) => ({
   name: `Product ${index + 1}`,
   price: (index + 1) * 100,
   image: base64Image,
