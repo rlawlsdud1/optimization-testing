@@ -19,6 +19,12 @@ const Test1 = () => {
         >
           Go to Test1 B
         </button>
+        <button
+          onClick={() => navigate("summation")}
+          className="px-6 py-3 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300"
+        >
+          Go to Test1 Summation
+        </button>
       </div>
       <div className="mt-8 w-full">
         <Outlet />

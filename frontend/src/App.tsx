@@ -6,6 +6,7 @@ import Test2 from "./pages/test2/Test2";
 import Test3 from "./pages/test3/Test3";
 import Test1A from "./pages/test1/Test1A";
 import Test1B from "./pages/test1/Test1B";
+import Test1Summation from "./pages/test1/Test1Summation";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/test1" element={<Test1 />}>
             <Route path="a" element={<Test1A />} />
             <Route path="b" element={<Test1B />} />
+            <Route path="summation" element={<Test1Summation />} />
           </Route>
           <Route path="/test2" element={<Test2 />} />
           <Route path="/test3" element={<Test3 />} />
