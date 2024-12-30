@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const insertInitialData = require("./services/insertProducts");
 const productRoutes = require("./routes/products");
 
@@ -14,6 +15,7 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
