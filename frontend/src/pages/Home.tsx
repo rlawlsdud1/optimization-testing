@@ -27,11 +27,11 @@ const Home = () => {
 
       <div className="bg-white shadow-lg rounded-lg p-6 mb-6 w-full sm:w-3/4 md:w-1/2">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-          3. memoization은 렌더링 시간에 얼마나 유의미한 영향을 끼칠까
+          3. Lazy Loading과 Suspense의 필요성
         </h2>
         <p className="text-gray-600">
-          `memoization`을 사용하여 렌더링 성능을 최적화하는 방법과, 렌더링
-          시간에 미치는 영향을 분석합니다.
+          `React.lazy`와 `Suspense`를 적용하여 초기 번들 크기를 줄이고, 무거운
+          컴포넌트가 필요한 시점에서만 로드되도록 합니다.
         </p>
       </div>
 
