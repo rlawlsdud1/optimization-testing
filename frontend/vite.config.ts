@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import visualizer from "./node_modules/rollup-plugin-visualizer/dist/plugin/index.d";
+import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vite.dev/config/
 export default defineConfig({
